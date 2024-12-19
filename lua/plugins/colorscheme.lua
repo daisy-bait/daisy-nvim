@@ -18,9 +18,11 @@ return {
 
 					-- Line Number Column transparent
 					LineNr = { bg = "NONE" },
+					-- Sign Column transparent
+					SignColumn = { bg = "NONE" },
 
 					-- Cursor line opaque
-					--CursorLine = { bg = "NONE" },
+					-- CursorLine = { bg = "NONE" },
 
 					NormalDark = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m3 },
 				}
