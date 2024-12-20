@@ -39,4 +39,4 @@ local themes = {
 	"retrobox",
 }
 
-vim.cmd.colorscheme(themes[2])
+vim.cmd.colorscheme(themes[3])
