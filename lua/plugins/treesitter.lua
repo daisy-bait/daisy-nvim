@@ -1,5 +1,8 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
+	--[[dependencies = {
+		"nvim-treesitter/nvim-treesitter-textobjects",
+	},]]--
 	-- To Update the languages when the plugin is installed or updated
 	build = ":TSUpdate",
 	event = "VeryLazy",
@@ -10,6 +13,12 @@ return {
 		ensure_installed = {
 			"lua",
 			"luadoc",
+			"bash",
+			"java",
+			"xml",
+			"html",
+			"css",
+			"javascript",
 
 		},
 		highlight = {
@@ -17,6 +26,20 @@ return {
 		},
 		indent = {
 			enable = true,
-		}
+		},
+		textobjects = {
+			select = {
+				enable = true,
+				lookahead = true,
+				keymaps = {
+					["af"] = "@function.outer",
+					["if"] = "@function.inner",
+					["ac"] = "@conditional.outer",
+					["ic"] = "@conditional.inner",
+					["al"] = "@loop.outer",
+					["il"] = "@loop.inner",
+				}
+			},
+		},
 	}
 }
