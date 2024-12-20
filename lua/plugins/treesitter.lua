@@ -1,8 +1,8 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	--[[dependencies = {
+	dependencies = {
 		"nvim-treesitter/nvim-treesitter-textobjects",
-	},]]--
+	},
 	-- To Update the languages when the plugin is installed or updated
 	build = ":TSUpdate",
 	event = "VeryLazy",
