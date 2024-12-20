@@ -1,7 +1,7 @@
 
 --- 𝓫𝓪𝓼𝓲𝓬 𝓸𝓹𝓽𝓲𝓸𝓷𝓼
 ---
-vim.o.background = ""
+vim.o.background = "dark"
 vim.o.clipboard = "unnamedplus"
 vim.o.cursorline = true
 vim.o.mouse = "a"
@@ -35,7 +35,8 @@ vim.o.hidden = true  --- 𝓬𝓱𝓪𝓷𝓰𝓮 𝓫𝓾𝓯𝓯𝓮𝓻 𝔀�
 local themes = {
 	"tokyonight",
 	"kanagawa",
+	"enfocado",
 	"retrobox",
 }
 
-vim.cmd.colorscheme(themes[1])
+vim.cmd.colorscheme(themes[2])

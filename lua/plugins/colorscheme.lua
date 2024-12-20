@@ -7,7 +7,11 @@ return {
 		priority = 1000,
 		opts = {
 			transparent = true,
-			theme = "dragon",
+			--- Uncomment if vim.o.background=""
+			--theme = "dragon",
+			background = {
+				dark = "dragon",
+			},
 			overrides = function(colors)
 				local theme = colors.theme
 				return {
@@ -38,5 +42,14 @@ return {
 			style = "night",
 			transparent = true,
 		},
+	},
+	--- enfocado theme
+	{
+		"wuelnerdotexe/vim-enfocado",
+		lazy = false,
+		priority = 1000,
+		init = function()
+			vim.g.enfocado_style = "neon"
+		end,
 	}
 }
