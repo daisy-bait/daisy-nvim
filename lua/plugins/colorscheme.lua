@@ -32,7 +32,7 @@ return {
 	--- Tokyonight theme
 	{
 		"folke/tokyonight.nvim",
-		lazy = "false"
+		lazy = "false",
 		priority = 1000,
 		opts = {
 
