@@ -48,9 +48,6 @@ return {
 		"wuelnerdotexe/vim-enfocado",
 		lazy = false,
 		priority = 1000,
-		init = function()
-			vim.g.enfocado_style = "natural"
-		end,
     	config = function()
  			--- Use of Neovim highlightings to make background and UI transparent
 			vim.api.nvim_create_augroup("EnfocadoCustomization", { clear = true })
