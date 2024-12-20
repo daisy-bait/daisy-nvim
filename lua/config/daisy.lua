@@ -33,9 +33,9 @@ vim.o.hidden = true  --- 𝓬𝓱𝓪𝓷𝓰𝓮 𝓫𝓾𝓯𝓯𝓮𝓻 𝔀�
 --- 𝓷𝓿𝓲𝓶 𝓽𝓱𝓮𝓶𝓮 ⋆⁺₊❅.
 ---
 local themes = {
-	"enfocado",
+	"tokyonight",
 	"kanagawa",
 	"retrobox",
 }
 
-vim.cmd.colorscheme(themes[2])
+vim.cmd.colorscheme(themes[1])
