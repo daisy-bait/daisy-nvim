@@ -19,7 +19,9 @@ return {
 			"html",
 			"css",
 			"javascript",
+			"json",
 			"markdown",
+			"markdown_inline",
 
 		},
 		highlight = {

@@ -4,6 +4,7 @@
 vim.o.background = "dark"
 vim.o.clipboard = "unnamedplus"
 vim.o.cursorline = true
+vim.o.expandtab = true
 vim.o.mouse = "a"
 vim.o.number = true
 vim.o.relativenumber = true
@@ -39,4 +40,4 @@ local themes = {
 	"retrobox",
 }
 
-vim.cmd.colorscheme(themes[1])
+vim.cmd.colorscheme(themes[3])

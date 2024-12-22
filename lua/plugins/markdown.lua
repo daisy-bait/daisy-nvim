@@ -11,6 +11,9 @@ return {
 			heading = {
 				left_pad = 1,
 			},
+			bullet = {
+				right_pad = 1,
+			}
 		},
 	},
 }
