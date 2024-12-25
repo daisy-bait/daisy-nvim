@@ -5,6 +5,8 @@
   "lazy.nvim": { "branch": "main", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },
   "mason.nvim": { "branch": "main", "commit": "e2f7f9044ec30067bc11800a9e266664b88cda22" },
   "mini.nvim": { "branch": "main", "commit": "2011aff270bcd3e1f3ad088253ace2d574967bed" },
+  "neodev.nvim": { "branch": "main", "commit": "46aa467dca16cf3dfe27098042402066d2ae242d" },
+  "nvim-lspconfig": { "branch": "master", "commit": "c580f34bc5fdca8aaf737a9ab8a5d775cb940e57" },
   "nvim-treesitter": { "branch": "master", "commit": "096babebf6daef2a046650883082ed2b3dcc5b67" },
   "nvim-treesitter-textobjects": { "branch": "master", "commit": "ad8f0a472148c3e0ae9851e26a722ee4e29b1595" },
   "nvim-web-devicons": { "branch": "master", "commit": "c1a86a2c386c55efc02fa2ec2c3a914af653d954" },
