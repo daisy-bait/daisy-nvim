@@ -40,14 +40,31 @@ function C.setup()
 
   --- [Sources for Particular Buffers] ---
   --- To enable cmp-git
-  --[[cmp.setup.filetype('gitcommit', {
+  cmp.setup.filetype('gitcommit', {
     sources = cmp.config.sources({
       { name = 'git' },
     }, {
       { name = 'buffer' },
     })
   })
-  require("cmp_git").setup()]]--
+
+  --- For searching autocomplete, use the buffer itself for autocomplete
+  cmp.setup.cmdline({'/', '?'}, {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = {
+      { name = 'buffer' }
+    }
+  })
+
+  -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+  cmp.setup.cmdline(':', {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = cmp.config.sources({
+      { name = 'path' }
+    }, {
+      { name = 'cmdline' }
+    })
+  })
 
 end
 

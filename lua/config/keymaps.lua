@@ -7,6 +7,6 @@ vim.g.mapleader = " ",
 ---
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "save file" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "close window" })
-vim.keymap.set("n", "<leader>f", ":/", { desc = "search coincidences" })
+vim.keymap.set("n", "<leader>f", "/", { desc = "search coincidences" })
 vim.keymap.set("n", "<leader>fb", ":%s/", { desc = "search and replace" })
 vim.keymap.set("v", "<C-c>", '"+y', { desc = "copy to system clipboard" })
