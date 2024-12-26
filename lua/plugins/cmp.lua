@@ -10,7 +10,7 @@ return {
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
     ---
-    "windwp/nvim-autopairs",
+    --"windwp/nvim-autopairs",
   },
   event = "VeryLazy",
   --- Extract all the cmp config to other file

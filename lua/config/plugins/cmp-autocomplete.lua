@@ -1,6 +1,6 @@
 local cmp = require('cmp')
 local luasnip = require('luasnip')
-local cmp_autopairs = require('nvim-autopairs')
+--local cmp_autopairs = require('nvim-autopairs')
 
 --- Due we're extracting the config from lua/plugins/cmp.lua we must return a table(list) with a setup method with the config
 
@@ -36,6 +36,9 @@ function C.setup()
       { name = "path" },
       { name = "buffer" },
     }),
+    window = {
+      --completion = cmp.config.window.bordered(),
+    }
   })
 
   --- [Sources for Particular Buffers] ---

@@ -17,7 +17,8 @@ return {
     local on_attach = function(_, bufnr)
       --- Enabling autocomplete
       vim.bo[bufnr].omnifunc = 'v:lua.vim.lsp.omnifunc'
-      vim.keymap.set('i', '<C-space>', '<C-x><C-o>', { noremap = true, silent = true })
+      --- Uncomment if want to use Nvim Client autocomplete
+      --vim.keymap.set('i', '<C-space>', '<C-x><C-o>', { noremap = true, silent = true })
 
       --- Formatting
       vim.keymap.set('n', '<space>ft', vim.lsp.buf.format)
@@ -30,5 +31,7 @@ return {
     local lsp = require("lspconfig")
     lsp.lua_ls.setup({ on_attach = on_attach })
     lsp.bashls.setup({ on_attach = on_attach })
+    lsp.jdtls.setup({ on_attach = on_attach })
+
   end
 }
