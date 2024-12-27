@@ -3,6 +3,7 @@ return {
   dependencies = {
     "williamboman/mason.nvim",
     "folke/neodev.nvim",
+    "mfussenegger/nvim-jdtls",
   },
   config = function()
     --- Global keybindings

@@ -9,6 +9,8 @@ return {
     --- For LuaSnip snippets
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
+    --- Snippet Collection
+    "rafamadriz/friendly-snippets",
     ---
     --"windwp/nvim-autopairs",
   },
