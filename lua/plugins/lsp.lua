@@ -13,6 +13,10 @@ return {
     vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
     vim.keymap.set('n', '<space>op', vim.diagnostic.setloclist)
 
+    --- Daisy keybindings
+    vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+    vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action)
+
     --- For specific servers, pass it intro setup list
     local on_attach = function(_, bufnr)
       --- Enabling autocomplete
@@ -31,7 +35,7 @@ return {
     local lsp = require("lspconfig")
     lsp.lua_ls.setup({ on_attach = on_attach })
     lsp.bashls.setup({ on_attach = on_attach })
-    lsp.jdtls.setup({ on_attach = on_attach })
-
+    --- Uncomment to use this default setup for jdtls
+    --lsp.jdtls.setup({ on_attach = on_attach })
   end
 }
