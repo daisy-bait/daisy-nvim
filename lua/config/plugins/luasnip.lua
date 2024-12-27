@@ -2,9 +2,6 @@
 local ls = require("luasnip")
 local types = require("luasnip.util.types")
 
---- To Load Snippet Collection from friendly-snippets
-require("luasnip.loaders.from_vscode").lazy_load()
-
 local LS = {}
 
 function LS.setup()

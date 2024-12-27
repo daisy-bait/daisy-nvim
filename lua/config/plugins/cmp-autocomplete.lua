@@ -3,6 +3,9 @@ local cmp = require('cmp')
 local luasnip = require('luasnip')
 --local cmp_autopairs = require('nvim-autopairs')
 
+--- To Load Snippet Collection from friendly-snippets
+require("luasnip.loaders.from_vscode").lazy_load()
+
 --- Due we're extracting the config from lua/plugins/cmp.lua we must return a table(list) with a setup method with the config
 local C = {}
 
