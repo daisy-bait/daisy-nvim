@@ -12,3 +12,5 @@ require("config.setup")
 --- 𝓲𝓶𝓹𝓸𝓻𝓽 𝓭𝓪𝓲𝓼𝔂 𝓼𝓮𝓽𝓽𝓲𝓷𝓰𝓼
 ---
 require("config.daisy")
+---
+require("config.wezterm")

@@ -35,7 +35,8 @@ vim.o.hidden = true  --- 𝓬𝓱𝓪𝓷𝓰𝓮 𝓫𝓾𝓯𝓯𝓮𝓻 𝔀�
 ---
 local themes = {
 	"tokyonight",
-	"kanagawa",
+	"kanagawa-dragon",
+  "kanagawa-wave",
 	"enfocado",
 	"retrobox",
 }
