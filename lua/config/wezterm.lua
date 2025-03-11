@@ -24,8 +24,13 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     assert(type(filename) == "string")
     local file = io.open(filename, "w")
     assert(file)
-    file:write(colorscheme)
+    file:write(colorscheme, "\n", args.match)
     file:close()
     vim.notify("Setting WezTerm color scheme to " .. colorscheme, vim.log.levels.INFO)
+
+    -- Force WezTerm reload with the config file
+    local wezterm_config = "/mnt/c/Users/kadan/.wezterm.lua"
+    vim.fn.system({ "touch", wezterm_config })
+
   end,
 })

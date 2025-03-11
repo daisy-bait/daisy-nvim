@@ -33,12 +33,19 @@ vim.o.hidden = true  --- 𝓬𝓱𝓪𝓷𝓰𝓮 𝓫𝓾𝓯𝓯𝓮𝓻 𝔀�
 
 --- 𝓷𝓿𝓲𝓶 𝓽𝓱𝓮𝓶𝓮 ⋆⁺₊❅.
 ---
-local themes = {
-	"tokyonight",
-	"kanagawa-dragon",
-  "kanagawa-wave",
-	"enfocado",
-	"retrobox",
-}
 
-vim.cmd.colorscheme(themes[1])
+local file_path = "/mnt/c/Users/kadan/.wezterm/colorscheme"
+
+local colorscheme_file = io.open(file_path, "r")
+
+if colorscheme_file then
+  -- Save colorscheme name
+  local theme_name = colorscheme_file:read("*l")
+  theme_name = colorscheme_file:read("*l")
+  colorscheme_file:close()
+  -- Now apply the theme
+  vim.cmd.colorscheme(theme_name)
+else
+  vim.cmd.colorscheme("tokyonight")
+end
+
