@@ -24,7 +24,7 @@ return {
 			},
       code = {
         language_pad = 3,
-        disable_background = true,
+        disable_background = false,
         width = 'block',
         left_pad = 3,
         right_pad = 2,

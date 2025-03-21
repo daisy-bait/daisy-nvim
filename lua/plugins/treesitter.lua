@@ -15,6 +15,7 @@ return {
 			"luadoc",
 			"bash",
 			"java",
+      "yaml",
 			"xml",
 			"html",
 			"css",

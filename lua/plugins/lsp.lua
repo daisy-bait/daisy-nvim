@@ -36,6 +36,15 @@ return {
     local lsp = require("lspconfig")
     lsp.lua_ls.setup({ on_attach = on_attach })
     lsp.bashls.setup({ on_attach = on_attach })
+    lsp.yamlls.setup({ on_attach = on_attach })
+    lsp.html.setup({ on_attach = on_attach })
+    lsp.cssls.setup({ on_attach = on_attach })
+    lsp.ts_ls.setup({ on_attach = on_attach })
+    lsp.jsonls.setup({ on_attach = on_attach })
+    lsp.eslint.setup({ on_attach = on_attach })
+    lsp.dockerls.setup({ on_attach = on_attach })
+    lsp.docker_compose_language_service.setup({ on_attach = on_attach })
+    lsp.lemminx.setup({ on_attach = on_attach })
     --- Uncomment to use this default setup for jdtls
     --lsp.jdtls.setup({ on_attach = on_attach })
   end
